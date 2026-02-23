@@ -2,129 +2,151 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Felicidad en Colombia</title>
+<title>Felicidad Mundial</title>
 
 <style>
-body{
-    font-family: Arial;
-    background:#f4f6f8;
-    margin:0;
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background-color: #f9f9f9;
 }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:30px;
+h1, h2, h3 {
+  color: #2c3e50;
 }
 
-.card{
-    background:white;
-    padding:25px;
-    margin-bottom:30px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+p {
+  line-height: 1.6;
 }
 
-h1{color:#1f3c88;text-align:center;}
-h2{color:#274690;}
+/* Bloques con imagen al lado */
+.variable {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
 
-img{
-    width:100%;
-    border-radius:10px;
-    margin-top:15px;
+.variable img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #ececec;
+  text-align: center;
+  font-size: 14px;
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<h1>Felicidad Mundial</h1>
 
-<div class="card">
-<h1>Felicidad en Colombia</h1>
+<h2>Introducción</h2>
 
 <p>
-Este análisis examina los niveles de bienestar en 
-:contentReference[oaicite:0]{index=0} desde una perspectiva 
-social, cultural y política. Factores como la desigualdad, la violencia 
-histórica y la confianza en las instituciones influyen directamente en 
-la percepción de calidad de vida.
+La felicidad de una sociedad no depende únicamente de la riqueza económica. Factores como el apoyo social, la salud, la libertad y la confianza en las instituciones influyen profundamente en la calidad de vida de las personas. El World Happiness Report evalúa estos elementos para comparar el bienestar entre países.
+</p>
+
+<h2>Variables de la felicidad</h2>
+
+<div class="variable">
+  <img src="Social_support.jpg" alt="Apoyo social">
+  <div>
+    <h3>Apoyo social</h3>
+    <p>Se refiere a la percepción de que una persona cuenta con familiares o amigos en quienes confiar en momentos difíciles.</p>
+  </div>
+</div>
+
+<div class="variable">
+  <img src="Gdp_per_capita.png" alt="PIB">
+  <div>
+    <h3>PIB per cápita</h3>
+    <p>Indica el nivel de desarrollo económico promedio por habitante y su capacidad para cubrir necesidades básicas.</p>
+  </div>
+</div>
+
+<div class="variable">
+  <img src="Freedom_to_make_life_choices.jpg" alt="Libertad">
+  <div>
+    <h3>Libertad para tomar decisiones</h3>
+    <p>Mide el grado en que las personas sienten que pueden elegir cómo vivir sus vidas.</p>
+  </div>
+</div>
+
+<div class="variable">
+  <img src="Healthy_life_expectancy.png" alt="Salud">
+  <div>
+    <h3>Esperanza de vida saludable</h3>
+    <p>Refleja la cantidad de años que se espera que una persona viva con buena salud.</p>
+  </div>
+</div>
+
+<div class="variable">
+  <img src="Perception_of_corruption.png" alt="Corrupción">
+  <div>
+    <h3>Percepción de corrupción</h3>
+    <p>Mide el nivel de confianza en las instituciones públicas y la percepción de transparencia.</p>
+  </div>
+</div>
+
+<h2>Análisis de países</h2>
+
+<p>
+Finlandia presenta el Ladder Score total más alto. Destaca especialmente en apoyo social, PIB per cápita sólido y baja percepción de corrupción. También muestra buenos niveles de libertad para tomar decisiones y esperanza de vida saludable. La combinación de bienestar económico, confianza social e instituciones fuertes impulsa su liderazgo.
 </p>
 
 <p>
-Al comparar con países altamente desarrollados como 
-:contentReference[oaicite:1]{index=1}, se evidencian 
-diferencias en estabilidad social, políticas públicas y acceso a servicios.
+Dinamarca se encuentra muy cerca de Finlandia en puntaje total. Sus fortalezas principales incluyen alto apoyo social, libertad individual significativa y muy baja corrupción percibida. Existe un gran balance entre riqueza, seguridad social y confianza institucional.
 </p>
-</div>
-
-<div class="card">
-<h2>Evolución de la satisfacción con la vida</h2>
-
-<img src="trend_of_Colombias_life_evaluation_over_the_years.png">
 
 <p>
-La satisfacción con la vida en Colombia ha mostrado fluctuaciones a lo 
-largo del tiempo, influenciadas por crisis económicas, cambios políticos 
-y condiciones sociales.
+Islandia también obtiene un puntaje alto, similar al de Dinamarca. Resalta por su fuerte apoyo social, libertad de elección y buen nivel de esperanza de vida saludable, lo que refleja una sociedad cohesionada y con alta calidad de vida.
 </p>
-</div>
-
-<div class="card">
-<h2>Comparación con los países menos felices</h2>
-
-<img src="comparacion_los_mejores.png">
 
 <p>
-Existe una brecha significativa frente a los países líderes en bienestar, 
-donde predominan sistemas de protección social sólidos y altos niveles de confianza.
+Colombia presenta un Ladder Score notablemente menor en comparación con los países nórdicos. Su contribución de PIB per cápita es menor, la percepción de corrupción es mayor y el apoyo social, aunque presente, es más bajo. Factores estructurales como la economía, las instituciones y la confianza limitan el puntaje global.
 </p>
-</div>
 
-<div class="card">
-<h2>Comparación con países más felices</h2>
-
-<img src="comparacion_los_peores.png">
+<h2>Conclusiones generales</h2>
 
 <p>
-Frente a los países con menores índices de felicidad, Colombia muestra 
-mejores resultados, lo que refleja avances en estabilidad relativa y desarrollo.
+Los países mejor posicionados comparten alto apoyo social, buen nivel económico, baja corrupción, alta libertad de elección y buena salud. Colombia muestra fortalezas sociales importantes, pero debilidades más marcadas en economía e instituciones que afectan su nivel de bienestar general.
 </p>
-</div>
 
-<div class="card">
-<h2>Colombia frente a Latinoamérica</h2>
+<footer>
 
-<img src="comparacion_con_latinoamérica.png">
+<h3>Participantes</h3>
 
 <p>
-Dentro de América Latina, Colombia ocupa una posición intermedia, compartiendo 
-desafíos estructurales como desigualdad e informalidad laboral.
+Santiago Ariza - cadenas@utb.edu.co<br>
+Hillary Feria - feriah@utb.edu.co<br>
+Leonel Almanza - lealmanza@utb.edu.co<br>
+Victor Julio - vijulio@utb.edu.co
 </p>
-</div>
 
-<div class="card">
-<h2>Comparación con países de ingreso similar</h2>
+<p><strong>Estudiantes Data Science UTB 2026</strong></p>
 
-<img src="comparación_con_los_de_su_rango.png">
+<hr>
 
 <p>
-Al comparar con economías de nivel parecido, se observa que el ingreso es 
-importante, pero también influyen factores como seguridad, educación y gobernanza.
+Fuente oficial:<br>
+<a href="https://www.worldhappiness.report/ed/2025/" target="_blank">
+World Happiness Report 2025
+</a>
 </p>
-</div>
 
-<div class="card">
-<h2>Conclusión</h2>
+</footer>
 
-<p>
-La felicidad en Colombia depende de una combinación de factores económicos, 
-sociales y políticos. Reducir la desigualdad, fortalecer las instituciones 
-y mejorar el acceso a servicios básicos son claves para aumentar el bienestar.
-</p>
-</div>
-
-</div>
 </body>
 </html>
-
