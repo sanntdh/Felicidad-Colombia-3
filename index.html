@@ -1,152 +1,281 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Felicidad Mundial</title>
+<title>Felicidad en Colombia — World Happiness Report 2025</title>
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  background-color: #f9f9f9;
+
+body{
+    margin:0;
+    font-family:'Segoe UI', Arial, sans-serif;
+    background:#edf1f7;
+    color:#2c2c2c;
 }
 
-h1, h2, h3 {
-  color: #2c3e50;
+/* ===== ENCABEZADO ===== */
+.header{
+    background:linear-gradient(135deg,#1f3c88,#274690);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
 }
 
-p {
-  line-height: 1.6;
+.header h1{
+    margin:0;
+    font-size:38px;
 }
 
-/* Bloques con imagen al lado */
-.variable {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  margin-bottom: 25px;
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
+.header p{
+    margin-top:10px;
+    font-size:18px;
+    opacity:0.9;
 }
 
-.variable img {
-  width: 120px;
-  height: auto;
-  border-radius: 6px;
+/* ===== CONTENEDOR ===== */
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:30px 20px;
 }
 
-/* Footer */
-footer {
-  margin-top: 50px;
-  padding: 20px;
-  background: #ececec;
-  text-align: center;
-  font-size: 14px;
+/* ===== TARJETAS ===== */
+.card{
+    background:white;
+    border-radius:14px;
+    padding:28px;
+    margin-bottom:30px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.07);
 }
+
+h2{
+    color:#1f3c88;
+    margin-top:0;
+    border-left:6px solid #274690;
+    padding-left:12px;
+}
+
+h3{
+    color:#274690;
+    margin-bottom:6px;
+}
+
+p{
+    line-height:1.7;
+    text-align:justify;
+}
+
+/* ===== VARIABLES ===== */
+.variables{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:18px;
+}
+
+.variable{
+    background:#f4f7fc;
+    padding:15px;
+    border-radius:10px;
+}
+
+/* ===== BLOQUES CON IMAGEN ===== */
+.section-flex{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    align-items:center;
+}
+
+.section-flex img{
+    width:420px;
+    max-width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== CONCLUSIÓN DESTACADA ===== */
+.highlight{
+    background:#f0f4ff;
+    border-left:6px solid #1f3c88;
+    padding:18px;
+    border-radius:8px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+.footer a{
+    color:#ffd166;
+    text-decoration:none;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>Felicidad Mundial</h1>
+<div class="header">
+<h1>Felicidad en Colombia</h1>
+<p>Análisis basado en el World Happiness Report 2025</p>
+</div>
 
+<div class="container">
+
+<div class="card">
 <h2>Introducción</h2>
 
 <p>
-La felicidad de una sociedad no depende únicamente de la riqueza económica. Factores como el apoyo social, la salud, la libertad y la confianza en las instituciones influyen profundamente en la calidad de vida de las personas. El World Happiness Report evalúa estos elementos para comparar el bienestar entre países.
-</p>
-
-<h2>Variables de la felicidad</h2>
-
-<div class="variable">
-  <img src="Social_support.jpg" alt="Apoyo social">
-  <div>
-    <h3>Apoyo social</h3>
-    <p>Se refiere a la percepción de que una persona cuenta con familiares o amigos en quienes confiar en momentos difíciles.</p>
-  </div>
-</div>
-
-<div class="variable">
-  <img src="Gdp_per_capita.png" alt="PIB">
-  <div>
-    <h3>PIB per cápita</h3>
-    <p>Indica el nivel de desarrollo económico promedio por habitante y su capacidad para cubrir necesidades básicas.</p>
-  </div>
-</div>
-
-<div class="variable">
-  <img src="Freedom_to_make_life_choices.jpg" alt="Libertad">
-  <div>
-    <h3>Libertad para tomar decisiones</h3>
-    <p>Mide el grado en que las personas sienten que pueden elegir cómo vivir sus vidas.</p>
-  </div>
-</div>
-
-<div class="variable">
-  <img src="Healthy_life_expectancy.png" alt="Salud">
-  <div>
-    <h3>Esperanza de vida saludable</h3>
-    <p>Refleja la cantidad de años que se espera que una persona viva con buena salud.</p>
-  </div>
-</div>
-
-<div class="variable">
-  <img src="Perception_of_corruption.png" alt="Corrupción">
-  <div>
-    <h3>Percepción de corrupción</h3>
-    <p>Mide el nivel de confianza en las instituciones públicas y la percepción de transparencia.</p>
-  </div>
-</div>
-
-<h2>Análisis de países</h2>
-
-<p>
-Finlandia presenta el Ladder Score total más alto. Destaca especialmente en apoyo social, PIB per cápita sólido y baja percepción de corrupción. También muestra buenos niveles de libertad para tomar decisiones y esperanza de vida saludable. La combinación de bienestar económico, confianza social e instituciones fuertes impulsa su liderazgo.
+El bienestar subjetivo constituye un indicador esencial del desarrollo humano. El World Happiness Report evalúa la felicidad de los países mediante el Ladder Score, una medida basada en la percepción que las personas tienen sobre su calidad de vida. Este índice integra factores económicos, sociales, institucionales y culturales.
 </p>
 
 <p>
-Dinamarca se encuentra muy cerca de Finlandia en puntaje total. Sus fortalezas principales incluyen alto apoyo social, libertad individual significativa y muy baja corrupción percibida. Existe un gran balance entre riqueza, seguridad social y confianza institucional.
+El presente informe analiza la situación de Colombia a partir de los datos oficiales del informe 2025 y de visualizaciones generadas mediante herramientas de análisis de datos. El objetivo es identificar los factores que explican su nivel de felicidad y compararlo con distintos grupos de países.
+</p>
+</div>
+
+<div class="card">
+<h2>Variables que explican la felicidad</h2>
+
+<div class="variables">
+
+<div class="variable">
+<h3>PIB per cápita</h3>
+<p>Refleja el nivel de ingreso promedio y el acceso a bienes y servicios.</p>
+</div>
+
+<div class="variable">
+<h3>Apoyo social</h3>
+<p>Mide la disponibilidad de redes familiares y comunitarias de ayuda.</p>
+</div>
+
+<div class="variable">
+<h3>Esperanza de vida saludable</h3>
+<p>Indica la calidad del sistema de salud y de las condiciones de vida.</p>
+</div>
+
+<div class="variable">
+<h3>Libertad para decidir</h3>
+<p>Evalúa el grado de autonomía personal y oportunidades de elección.</p>
+</div>
+
+<div class="variable">
+<h3>Generosidad</h3>
+<p>Representa comportamientos solidarios dentro de la sociedad.</p>
+</div>
+
+<div class="variable">
+<h3>Percepción de corrupción</h3>
+<p>Mide la confianza en las instituciones públicas y privadas.</p>
+</div>
+
+<div class="variable">
+<h3>Distopía + residual</h3>
+<p>Incluye factores no capturados por las variables anteriores.</p>
+</div>
+
+</div>
+</div>
+
+<div class="card">
+<h2>Felicidad de Colombia en los últimos años</h2>
+
+<div class="section-flex">
+<img src="trend_of_Colombias_life_evaluation_over_the_years.png">
+<p>
+La evolución del índice de felicidad en Colombia muestra variaciones asociadas a cambios económicos, políticos y sociales. A pesar de fluctuaciones, el país se mantiene en niveles intermedios a escala global, lo que refleja estabilidad relativa pero también limitaciones estructurales persistentes.
+</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Colombia frente a los países menos felices</h2>
+
+<div class="section-flex">
+<img src="comparacion_con_los_mejores.png">
+<p>
+Colombia presenta una ventaja significativa frente a los países con menor bienestar debido a la funcionalidad de sus instituciones, acceso a servicios básicos y redes sociales que amortiguan las crisis. En contraste, los países con menor felicidad suelen enfrentar conflictos armados, colapsos económicos o crisis humanitarias.
+</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Colombia frente a los países más felices</h2>
+
+<div class="section-flex">
+<img src="comparacion_con_los_peores.png">
+<p>
+Las naciones con mayor felicidad se caracterizan por economías sólidas, baja corrupción, alta confianza social y sistemas de bienestar robustos. Colombia presenta brechas importantes en estos aspectos, lo que explica su posición inferior en el ranking global.
+</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Colombia frente a países de ingreso similar</h2>
+
+<div class="section-flex">
+<img src="comparacion_con_los_de_su_rango.png">
+<p>
+Al compararse con economías de nivel comparable, Colombia muestra resultados cercanos al promedio. Esto indica que el ingreso explica parte del bienestar, pero variables como seguridad, gobernanza y cohesión social también son determinantes.
+</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Colombia frente a Latinoamérica</h2>
+
+<div class="section-flex">
+<img src="comparacion_con_latinoamerica.png">
+<p>
+Dentro de la región, Colombia ocupa una posición intermedia. Las diferencias entre países latinoamericanos están asociadas principalmente a estabilidad económica, calidad institucional y seguridad. La región comparte características estructurales que limitan diferencias extremas en felicidad.
+</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Conclusiones</h2>
+
+<div class="highlight">
+<p>
+La felicidad en Colombia depende de la interacción entre desarrollo económico, calidad institucional y cohesión social. Aunque el país no se encuentra entre los más felices del mundo, mantiene niveles moderados gracias a su estabilidad relativa y a la fortaleza de sus redes sociales.
 </p>
 
 <p>
-Islandia también obtiene un puntaje alto, similar al de Dinamarca. Resalta por su fuerte apoyo social, libertad de elección y buen nivel de esperanza de vida saludable, lo que refleja una sociedad cohesionada y con alta calidad de vida.
+El incremento del bienestar nacional requiere políticas orientadas a reducir la desigualdad, fortalecer las instituciones, mejorar la calidad del empleo y garantizar acceso equitativo a salud y educación.
 </p>
+</div>
+</div>
 
-<p>
-Colombia presenta un Ladder Score notablemente menor en comparación con los países nórdicos. Su contribución de PIB per cápita es menor, la percepción de corrupción es mayor y el apoyo social, aunque presente, es más bajo. Factores estructurales como la economía, las instituciones y la confianza limitan el puntaje global.
-</p>
+</div>
 
-<h2>Conclusiones generales</h2>
-
-<p>
-Los países mejor posicionados comparten alto apoyo social, buen nivel económico, baja corrupción, alta libertad de elección y buena salud. Colombia muestra fortalezas sociales importantes, pero debilidades más marcadas en economía e instituciones que afectan su nivel de bienestar general.
-</p>
-
-<footer>
+<div class="footer">
 
 <h3>Participantes</h3>
 
 <p>
-Santiago Ariza - cadenas@utb.edu.co<br>
-Hillary Feria - feriah@utb.edu.co<br>
-Leonel Almanza - lealmanza@utb.edu.co<br>
-Victor Julio - vijulio@utb.edu.co
+Santiago Ariza — cadenas@utb.edu.co<br>
+Hillary Feria — feriah@utb.edu.co<br>
+Leonel Almanza — lealmanza@utb.edu.co<br>
+Victor Julio — vijulio@utb.edu.co
 </p>
 
 <p><strong>Estudiantes Data Science UTB 2026</strong></p>
 
-<hr>
-
 <p>
-Fuente oficial:<br>
+Fuente de datos:<br>
 <a href="https://www.worldhappiness.report/ed/2025/" target="_blank">
 World Happiness Report 2025
 </a>
 </p>
 
-</footer>
+</div>
 
 </body>
 </html>
