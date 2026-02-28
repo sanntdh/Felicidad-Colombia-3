@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -56,10 +55,7 @@ h2{
     padding-left:12px;
 }
 
-h3{
-    color:#274690;
-    margin-bottom:6px;
-}
+h3{ color:#274690; }
 
 p{
     line-height:1.7;
@@ -88,13 +84,47 @@ p{
 }
 
 .section-flex img{
-    width:600px;
+    width:650px;
     max-width:100%;
     border-radius:10px;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ===== CONCLUSIÓN DESTACADA ===== */
+/* ===== GALERÍA DE PAÍSES ===== */
+
+.country-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.country-card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    transition:transform 0.3s ease;
+    text-align:center;
+}
+
+.country-card:hover{
+    transform:scale(1.04);
+}
+
+.country-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.country-name{
+    padding:12px;
+    font-weight:600;
+    color:#1f3c88;
+}
+
+/* ===== CONCLUSIÓN ===== */
 .highlight{
     background:#f0f4ff;
     border-left:6px solid #1f3c88;
@@ -117,7 +147,6 @@ p{
 }
 
 </style>
-
 </head>
 
 <body>
@@ -129,6 +158,7 @@ p{
 
 <div class="container">
 
+<!-- INTRODUCCIÓN -->
 <div class="card">
 <h2>Introducción</h2>
 
@@ -141,120 +171,117 @@ El presente informe analiza la situación de Colombia a partir de los datos ofic
 </p>
 </div>
 
+<!-- GALERÍA DE PAÍSES -->
+<div class="card">
+<h2>Contexto visual de la felicidad en distintos países</h2>
+
+<div class="country-gallery">
+
+<div class="country-card">
+<img src="felicidad_colombia.jpg">
+<div class="country-name">Colombia</div>
+</div>
+
+<div class="country-card">
+<img src="felicidad_argentina.jpg">
+<div class="country-name">Argentina</div>
+</div>
+
+<div class="country-card">
+<img src="Finlandia_felicidad.jpg">
+<div class="country-name">Finlandia</div>
+</div>
+
+<div class="country-card">
+<img src="felicidad_islandia.jpg">
+<div class="country-name">Islandia</div>
+</div>
+
+<div class="country-card">
+<img src="tristeza_afghanistan.jpg">
+<div class="country-name">Afganistán</div>
+</div>
+
+</div>
+
+<p>
+Las imágenes ilustran contextos sociales contrastantes entre países con distintos niveles de bienestar, mostrando diferencias en estabilidad, cohesión social, seguridad y calidad de vida.
+</p>
+
+</div>
+
+<!-- VARIABLES -->
 <div class="card">
 <h2>Variables que explican la felicidad</h2>
 
 <div class="variables">
 
-<div class="variable">
-<h3>PIB per cápita</h3>
-<p>Refleja el nivel de ingreso promedio y el acceso a bienes y servicios.</p>
-</div>
-
-<div class="variable">
-<h3>Apoyo social</h3>
-<p>Mide la disponibilidad de redes familiares y comunitarias de ayuda.</p>
-</div>
-
-<div class="variable">
-<h3>Esperanza de vida saludable</h3>
-<p>Indica la calidad del sistema de salud y de las condiciones de vida.</p>
-</div>
-
-<div class="variable">
-<h3>Libertad para decidir</h3>
-<p>Evalúa el grado de autonomía personal y oportunidades de elección.</p>
-</div>
-
-<div class="variable">
-<h3>Generosidad</h3>
-<p>Representa comportamientos solidarios dentro de la sociedad.</p>
-</div>
-
-<div class="variable">
-<h3>Percepción de corrupción</h3>
-<p>Mide la confianza en las instituciones públicas y privadas.</p>
-</div>
-
-<div class="variable">
-<h3>Distopía + residual</h3>
-<p>Incluye factores no capturados por las variables anteriores.</p>
-</div>
+<div class="variable"><h3>PIB per cápita</h3><p>Refleja el nivel de ingreso promedio.</p></div>
+<div class="variable"><h3>Apoyo social</h3><p>Mide redes de ayuda familiar y comunitaria.</p></div>
+<div class="variable"><h3>Esperanza de vida saludable</h3><p>Indica condiciones de salud y vida.</p></div>
+<div class="variable"><h3>Libertad para decidir</h3><p>Evalúa la autonomía personal.</p></div>
+<div class="variable"><h3>Generosidad</h3><p>Representa conductas solidarias.</p></div>
+<div class="variable"><h3>Percepción de corrupción</h3><p>Mide confianza institucional.</p></div>
+<div class="variable"><h3>Distopía + residual</h3><p>Factores no capturados por otras variables.</p></div>
 
 </div>
 </div>
 
+<!-- GRÁFICAS -->
 <div class="card">
 <h2>Felicidad de Colombia en los últimos años</h2>
-
 <div class="section-flex">
 <img src="trend_of_Colombias_life_evaluation_over_the_years.png">
-<p>
-La evolución del índice de felicidad en Colombia muestra variaciones asociadas a cambios económicos, políticos y sociales. A pesar de fluctuaciones, el país se mantiene en niveles intermedios a escala global, lo que refleja estabilidad relativa pero también limitaciones estructurales persistentes.
-</p>
+<p>Colombia muestra fluctuaciones moderadas asociadas a cambios económicos y sociales.</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a los países menos felices</h2>
-
 <div class="section-flex">
 <img src="comparacion_los_mejores.png">
-<p>
-Colombia presenta una ventaja significativa frente a los países con menor bienestar debido a la funcionalidad de sus instituciones, acceso a servicios básicos y redes sociales que amortiguan las crisis. En contraste, los países con menor felicidad suelen enfrentar conflictos armados, colapsos económicos o crisis humanitarias.
-</p>
+<p>Colombia supera a países con crisis humanitarias o conflictos armados.</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a los países más felices</h2>
-
 <div class="section-flex">
 <img src="comparacion_los_peores.png">
-<p>
-Las naciones con mayor felicidad se caracterizan por economías sólidas, baja corrupción, alta confianza social y sistemas de bienestar robustos. Colombia presenta brechas importantes en estos aspectos, lo que explica su posición inferior en el ranking global.
-</p>
+<p>Los países más felices poseen economías sólidas y alta confianza social.</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a países de ingreso similar</h2>
-
 <div class="section-flex">
 <img src="comparación_con_los_de_su_rango.png">
-<p>
-Al compararse con economías de nivel comparable, Colombia muestra resultados cercanos al promedio. Esto indica que el ingreso explica parte del bienestar, pero variables como seguridad, gobernanza y cohesión social también son determinantes.
-</p>
+<p>El ingreso explica parte del bienestar, pero no es el único factor.</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a Latinoamérica</h2>
-
 <div class="section-flex">
 <img src="comparacion_con_latinoamérica.png">
-<p>
-Dentro de la región, Colombia ocupa una posición intermedia. Las diferencias entre países latinoamericanos están asociadas principalmente a estabilidad económica, calidad institucional y seguridad. La región comparte características estructurales que limitan diferencias extremas en felicidad.
-</p>
+<p>Colombia se ubica en una posición intermedia dentro de la región.</p>
 </div>
 </div>
 
+<!-- CONCLUSIÓN -->
 <div class="card">
 <h2>Conclusiones</h2>
 
 <div class="highlight">
 <p>
-La felicidad en Colombia depende de la interacción entre desarrollo económico, calidad institucional y cohesión social. Aunque el país no se encuentra entre los más felices del mundo, mantiene niveles moderados gracias a su estabilidad relativa y a la fortaleza de sus redes sociales.
-</p>
-
-<p>
-El incremento del bienestar nacional requiere políticas orientadas a reducir la desigualdad, fortalecer las instituciones, mejorar la calidad del empleo y garantizar acceso equitativo a salud y educación.
+La felicidad en Colombia depende de la interacción entre desarrollo económico, calidad institucional y cohesión social. Aunque no se encuentra entre los países más felices, mantiene niveles moderados gracias a su estabilidad relativa y a la fortaleza de sus redes sociales.
 </p>
 </div>
 </div>
 
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
 
 <h3>Participantes</h3>
@@ -279,4 +306,3 @@ World Happiness Report 2025
 
 </body>
 </html>
-
