@@ -33,7 +33,7 @@ body{
 
 /* ===== TARJETAS ===== */
 .card{
-    background:#ffffff; /* ARREGLADO */
+    background:#ffffff;
     border-radius:14px;
     padding:28px;
     margin-bottom:30px;
@@ -67,20 +67,25 @@ p{
     border-radius:10px;
 }
 
-/* ===== BLOQUES CON IMAGEN ===== */
+/* ===== BLOQUES IMAGEN + TEXTO (LO IMPORTANTE) ===== */
 .section-flex{
     display:flex;
-    flex-wrap:wrap;
-    gap:35px;              /* ESPACIO ENTRE IMAGEN Y TEXTO */
-    align-items:flex-start; /* ALINEADO ARRIBA */
-    margin-top:15px;
+    align-items:flex-start;
+    gap:40px;              /* MISMA DISTANCIA EN TODOS */
+    margin-top:20px;
 }
 
 .section-flex img{
     width:520px;
-    max-width:100%;
+    max-width:520px;
+    flex-shrink:0;         /* evita que se reduzca */
     border-radius:10px;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-flex p{
+    flex:1;
+    margin:0;
 }
 
 /* ===== GALERÍA DE PAÍSES ===== */
@@ -213,21 +218,17 @@ Las imágenes ilustran contextos sociales contrastantes...
 </div>
 
 <!-- GRÁFICAS -->
+
 <div class="card">
 <h2>Felicidad de Colombia en los últimos años</h2>
-
 <div class="section-flex">
 <img src="trend_of_Colombias_life_evaluation_over_the_years.png">
-
-<p>
-Se puede observar como Colombia ha sufrido distintas fluctuaciones...
-</p>
+<p>Se puede observar cómo Colombia ha sufrido distintas fluctuaciones...</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a los países menos felices</h2>
-
 <div class="section-flex">
 <img src="comparacion_los_mejores.png">
 <p>Cuando comparamos a Colombia con los países menos felices...</p>
@@ -236,7 +237,6 @@ Se puede observar como Colombia ha sufrido distintas fluctuaciones...
 
 <div class="card">
 <h2>Colombia frente a los países más felices</h2>
-
 <div class="section-flex">
 <img src="comparacion_los_peores.png">
 <p>Al enfrentar a Colombia contra los países más felices...</p>
@@ -245,7 +245,6 @@ Se puede observar como Colombia ha sufrido distintas fluctuaciones...
 
 <div class="card">
 <h2>Colombia frente a países de su rango</h2>
-
 <div class="section-flex">
 <img src="comparación_con_los_de_su_rango.png">
 <p>A pesar de que Colombia es de los países...</p>
@@ -254,7 +253,6 @@ Se puede observar como Colombia ha sufrido distintas fluctuaciones...
 
 <div class="card">
 <h2>Colombia frente a Latinoamérica</h2>
-
 <div class="section-flex">
 <img src="comparacion_con_latinoamérica.png">
 <p>Colombia tiene muy buen producto interno bruto...</p>
