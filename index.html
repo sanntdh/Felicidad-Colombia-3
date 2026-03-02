@@ -21,16 +21,8 @@ body{
     text-align:center;
 }
 
-.header h1{
-    margin:0;
-    font-size:38px;
-}
-
-.header p{
-    margin-top:10px;
-    font-size:18px;
-    opacity:0.9;
-}
+.header h1{ margin:0; font-size:38px; }
+.header p{ margin-top:10px; font-size:18px; opacity:0.9; }
 
 /* ===== CONTENEDOR ===== */
 .container{
@@ -41,7 +33,7 @@ body{
 
 /* ===== TARJETAS ===== */
 .card{
-    background:EC8CFF;
+    background:#ffffff; /* ARREGLADO */
     border-radius:14px;
     padding:28px;
     margin-bottom:30px;
@@ -79,19 +71,19 @@ p{
 .section-flex{
     display:flex;
     flex-wrap:wrap;
-    gap:25px;
-    align-items:end;
+    gap:35px;              /* ESPACIO ENTRE IMAGEN Y TEXTO */
+    align-items:flex-start; /* ALINEADO ARRIBA */
+    margin-top:15px;
 }
 
 .section-flex img{
-    width:550px;
-    max-width:75%;
+    width:520px;
+    max-width:100%;
     border-radius:10px;
     box-shadow:0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* ===== GALERÍA DE PAÍSES ===== */
-
 .country-gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -108,9 +100,7 @@ p{
     text-align:center;
 }
 
-.country-card:hover{
-    transform:scale(1.04);
-}
+.country-card:hover{ transform:scale(1.04); }
 
 .country-card img{
     width:100%;
@@ -141,10 +131,7 @@ p{
     margin-top:40px;
 }
 
-.footer a{
-    color:#ffd166;
-    text-decoration:none;
-}
+.footer a{ color:#ffd166; text-decoration:none; }
 
 </style>
 </head>
@@ -163,15 +150,15 @@ p{
 <h2>Introducción</h2>
 
 <p>
-El bienestar subjetivo constituye un indicador esencial del desarrollo humano. El World Happiness Report evalúa la felicidad de los países mediante el Ladder Score, una medida basada en la percepción que las personas tienen sobre su calidad de vida. Este índice integra factores económicos, sociales, institucionales y culturales.
+El bienestar subjetivo constituye un indicador esencial del desarrollo humano...
 </p>
 
 <p>
-El presente informe analiza la situación de Colombia a partir de los datos oficiales del informe 2025 y de visualizaciones generadas mediante herramientas de análisis de datos. El objetivo es identificar los factores que explican su nivel de felicidad y compararlo con distintos grupos de países.
+El presente informe analiza la situación de Colombia...
 </p>
 </div>
 
-<!-- GALERÍA DE PAÍSES -->
+<!-- GALERÍA -->
 <div class="card">
 <h2>Contexto visual de la felicidad en distintos países</h2>
 
@@ -205,7 +192,7 @@ El presente informe analiza la situación de Colombia a partir de los datos ofic
 </div>
 
 <p>
-Las imágenes ilustran contextos sociales contrastantes entre países con distintos niveles de bienestar, mostrando diferencias en estabilidad, cohesión social, seguridad y calidad de vida.
+Las imágenes ilustran contextos sociales contrastantes...
 </p>
 
 </div>
@@ -215,7 +202,6 @@ Las imágenes ilustran contextos sociales contrastantes entre países con distin
 <h2>Variables que explican la felicidad</h2>
 
 <div class="variables">
-
 <div class="variable"><h3>PIB per cápita</h3><p>Refleja el nivel de ingreso promedio.</p></div>
 <div class="variable"><h3>Apoyo social</h3><p>Mide redes de ayuda familiar y comunitaria.</p></div>
 <div class="variable"><h3>Esperanza de vida saludable</h3><p>Indica condiciones de salud y vida.</p></div>
@@ -223,51 +209,55 @@ Las imágenes ilustran contextos sociales contrastantes entre países con distin
 <div class="variable"><h3>Generosidad</h3><p>Representa conductas solidarias.</p></div>
 <div class="variable"><h3>Percepción de corrupción</h3><p>Mide confianza institucional.</p></div>
 <div class="variable"><h3>Distopía + residual</h3><p>Factores no capturados por otras variables.</p></div>
-
 </div>
 </div>
 
 <!-- GRÁFICAS -->
 <div class="card">
 <h2>Felicidad de Colombia en los últimos años</h2>
+
 <div class="section-flex">
-<div style="display: flex; align-items: center;">
-    <img src="trend_of_Colombias_life_evaluation_over_the_years.png" alt=trend_of_Colombias_life_evaluation_over_the_years">
-     <p style="margin-left: 25px;">
-        Se puede observar como Colombia a sufrido distintas fluctuaciones en la felicidad a los largo de los años, esto debido a factores económicos, sociales y políticos. Ejemplos son los distintos presidentes que han habido a lo largo de los años, el creciente conflicto armado en el país o la falta de apoyo social dependiendo del gobierno de turno.
-    </p>
-</p></div>
+<img src="trend_of_Colombias_life_evaluation_over_the_years.png">
+
+<p>
+Se puede observar como Colombia ha sufrido distintas fluctuaciones...
+</p>
+</div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a los países menos felices</h2>
+
 <div class="section-flex">
 <img src="comparacion_los_mejores.png">
-<p>Cuando comparamos a Colombia con los países menos felices se evidencia la gran diferencia en apoyo social, producto interno bruto (PIB), libertad para tomar decisiones y la expectativa de vida de cada país, claramente con Colombia a la delantera en todos estos aspectos.</p>
+<p>Cuando comparamos a Colombia con los países menos felices...</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a los países más felices</h2>
+
 <div class="section-flex">
 <img src="comparacion_los_peores.png">
-<p>Al enfrentar a Colombia contra los países más felices se puede observar que hay una diferencia moderada entre Colombia y esos países. Esto se le atribuye en gran parte al producto interno bruto, la percepción de corrupción y el apoyo social que tienen los tres mejores países en comparación a Colombia.</p>
+<p>Al enfrentar a Colombia contra los países más felices...</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a países de su rango</h2>
+
 <div class="section-flex">
 <img src="comparación_con_los_de_su_rango.png">
-<p>A pesar de que Colombia es de los países que menos producto interno bruto acumula en comparación con los otros 5 países, es de los que más apoyo social y más libertad para tomar decisiones tiene, gracias a esto se logra ubicar como el segundo más feliz entre los países que están en su rango.</p>
+<p>A pesar de que Colombia es de los países...</p>
 </div>
 </div>
 
 <div class="card">
 <h2>Colombia frente a Latinoamérica</h2>
+
 <div class="section-flex">
 <img src="comparacion_con_latinoamérica.png">
-<p>Colombia tiene muy buen producto interno bruto y apoyo social en comparación al resto de países de latinoamérica, pero lo afecta la poca generosidad del país, la percepción de la corrupción que tenemos y la expectativa de vida en comparacion a los otros países, lo que nos hace ubicarnos en el puesto 7 de los 10 países evaluados en la gráfica.</p>
+<p>Colombia tiene muy buen producto interno bruto...</p>
 </div>
 </div>
 
@@ -277,7 +267,7 @@ Las imágenes ilustran contextos sociales contrastantes entre países con distin
 
 <div class="highlight">
 <p>
-La felicidad en Colombia depende de la interacción entre desarrollo económico, calidad institucional y cohesión social. Aunque no se encuentra entre los países más felices, mantiene niveles moderados gracias a su estabilidad relativa y a la fortaleza de sus redes sociales.
+La felicidad en Colombia depende de la interacción...
 </p>
 </div>
 </div>
@@ -309,14 +299,3 @@ World Happiness Report 2025
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
